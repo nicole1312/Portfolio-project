@@ -16,11 +16,15 @@
 }
 
 h1 {
-  color: var(--headings-color);
+  color: var(--paragraphs-color);
   font-size: 98px;
   font-family: "Oswald", sans-serif;
   text-align: center;
   padding-bottom: 20px;
+}
+small {
+  color: var(--headings-color);
+  font-size: 98px;
 }
 h2 {
   color: var(--headings-color);
@@ -38,6 +42,7 @@ h4 {
   color: var(--paragraphs-color);
   font-size: 30px;
   font-family: "Oswald", sans-serif;
+  font-weight: bolder;
   text-align: center;
   padding: 60px 5px 0 5px;
 }
