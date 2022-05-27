@@ -1,4 +1,67 @@
+:root {
+  --primary-color: #f3f4f8;
+  --headings-color: #38598b;
+  --paragraphs-color: #093052;
+  --hovering-color: #a2a8d3;
+}
+.hero-body {
+  padding: 60px 40px 98px;
+  background: var(--primary-color);
+}
+
+.navbar-toggler:hover,
+.navbar-brand:hover {
+  transition: all 200ms ease-in-out;
+  opacity: 0.7;
+}
+
 h1 {
-  color: darkcyan;
+  color: var(--headings-color);
+  font-size: 98px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  padding-bottom: 20px;
+}
+h2 {
+  color: var(--headings-color);
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50px;
+}
+h3 {
+  color: var(--headings-color);
+  text-align: center;
+}
+h4 {
+  color: var(--paragraphs-color);
   font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  padding: 60px 5px 0 5px;
+}
+p {
+  color: var(--paragraphs-color);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  letter-spacing: -1px;
+}
+.link-buttons {
+  text-align: center;
+  padding: 60px;
+}
+.discover-more-link {
+  background: var(--headings-color);
+  color: var(--primary-color);
+}
+.discover-more-link:hover,
+.contact-me-link:hover {
+  color: var(--hovering-color);
+}
+.contact-me-link {
+  background: var(--headings-color);
+  color: var(--primary-color);
+
+  text-align: center;
 }

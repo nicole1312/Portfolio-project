@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-    <link rel="stylesheet" href="design/styles.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,16 +13,118 @@
       crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
     ></script>
     <script
       src="https://kit.fontawesome.com/07ecb5f0bc.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/design/styles.css" />
   </head>
   <body>
-    <h1>👋Hello👩‍💻</h1>
+    <div class="hero-body">
+      <nav
+        class="navbar fixed-top navbar-expand-lg"
+        style="background-color: #f3f4f8"
+      >
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            title="Scroll-to-the-Top"
+            style="color: #38598b"
+            href="/"
+            ><strong> NS </strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  title="Homepage"
+                  style="font-family: 'Oswald', sans-serif; color: #38598b"
+                  href="/"
+                  >homepage</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  title="About"
+                  style="font-family: 'Oswald', sans-serif; color: #38598b"
+                  href="/about.html"
+                  >about</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  title="Projects"
+                  style="font-family: 'Oswald', sans-serif; color: #38598b"
+                  href="/projects.html"
+                  >projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  title="Contact"
+                  style="font-family: 'Oswald', sans-serif; color: #38598b"
+                  href="/contact.html"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h2>Welcome</h2>
+      <h4>I am</h4>
+      <h1><strong>Nicole</strong> Serban</h1>
+
+      <h3>Junior Front-end Developer, based in London/ UK</h3>
+      <p class="text-center">
+        I am a very creative individual and have shown both my skills and eye
+        for design in my work and through my hobbies.
+      </p>
+      <div class="container-fluid mx-auto d-block mt-5 link-buttons">
+        <a href="#" class="text-decoration-none p-3 rounded discover-more-link"
+          >Discover More</a
+        >
+        <a
+          href="#"
+          class="text-decoration-none p-3 ps-4 pe-4 rounded contact-me-link"
+          >Contact Me</a
+        >
+      </div>
+    </div>
   </body>
 </html>
