@@ -66,6 +66,7 @@ p {
 .discover-more-link:hover,
 .contact-me-link:hover,
 .learn-more-about-rome:hover,
+.learn-more-about-weather-hub:hover,
 .learn-more-about-croissants:hover {
   color: var(--hovering-color);
 }
