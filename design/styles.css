@@ -32,7 +32,7 @@ h2 {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 h3 {
   color: var(--headings-color);
@@ -59,14 +59,36 @@ p {
 .discover-more-link {
   background: var(--headings-color);
   color: var(--primary-color);
+  text-align: center;
 }
 .discover-more-link:hover,
-.contact-me-link:hover {
+.contact-me-link:hover,
+.learn-more-about-rome:hover,
+.learn-more-about-croissants:hover {
   color: var(--hovering-color);
 }
-.contact-me-link {
+.about-body {
+  padding: 40px 40px 80px;
+}
+.about-me {
+  padding-top: 40px;
+}
+.projects-body {
+  background: var(--primary-color);
+}
+.text {
+  line-height: 1.2;
+}
+.learn-more-about-rome,
+.learn-more-about-weather-hub,
+.learn-more-about-croissants {
   background: var(--headings-color);
   color: var(--primary-color);
+}
 
-  text-align: center;
+@media (max-width: 600px) {
+  h1,
+  small {
+    font-size: 65px;
+  }
 }
