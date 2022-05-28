@@ -37,6 +37,7 @@ h2 {
 h3 {
   color: var(--headings-color);
   text-align: center;
+  margin: 20px;
 }
 h4 {
   color: var(--paragraphs-color);
@@ -49,7 +50,7 @@ h4 {
 p {
   color: var(--paragraphs-color);
   font-family: "Josefin Sans", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: -1px;
 }
 .link-buttons {
@@ -59,6 +60,7 @@ p {
 .discover-more-link {
   background: var(--headings-color);
   color: var(--primary-color);
+  padding: 15px 20px;
   text-align: center;
 }
 .discover-more-link:hover,
@@ -75,20 +77,61 @@ p {
 }
 .projects-body {
   background: var(--primary-color);
+  padding: 50px;
+}
+.travel-heading,
+.weather-heading,
+.croissants-heading {
+  margin: 40px;
+}
+
+.travel-link,
+.weather-link,
+.croissants-link {
+  margin: 40px 0 40px;
+  text-align: start;
 }
 .text {
   line-height: 1.2;
 }
+
 .learn-more-about-rome,
 .learn-more-about-weather-hub,
 .learn-more-about-croissants {
   background: var(--headings-color);
   color: var(--primary-color);
+  padding: 15px 20px;
 }
 
 @media (max-width: 600px) {
   h1,
   small {
     font-size: 65px;
+  }
+  h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+  p {
+    font-size: 18px;
+  }
+  .projects-body {
+    padding: 0;
+  }
+
+  .travel-link,
+  .weather-link,
+  .croissants-link {
+    margin: 0;
+    text-align: center;
+  }
+
+  .learn-more-about-rome,
+  .learn-more-about-weather-hub,
+  .learn-more-about-croissants {
+    padding: 15px 110px;
+  }
+  .discover-more-link {
+    padding: 15px 83px;
   }
 }
