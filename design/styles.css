@@ -73,12 +73,7 @@ p {
 .learn-more-about-croissants:hover {
   color: var(--hovering-color);
 }
-.about-body {
-  padding: 40px 40px 80px;
-}
-.about-me {
-  padding-top: 40px;
-}
+
 .projects-body {
   background: var(--primary-color);
   padding: 50px;
@@ -118,6 +113,13 @@ p {
 .croissants-img {
   width: 600px;
   margin-top: 80px;
+}
+.about-body {
+  padding: 60px;
+}
+
+.selfie {
+  width: 500px;
 }
 
 @media (max-width: 900px) {
