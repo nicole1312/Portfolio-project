@@ -74,10 +74,10 @@ p {
 .learn-more-about-translation-app:hover {
   color: var(--hovering-color);
 }
-.about-body {
+.about-contact-body {
   padding: 60px;
 }
-.about-h3 {
+.about-contact-h3 {
   color: var(--headings-color);
   font-family: "Oswald", sans-serif;
   font-size: 37px;
@@ -107,6 +107,7 @@ p {
 .projects-h1 {
   padding-top: 60px;
   font-size: 75px;
+  font-weight: bold;
 }
 .projects-h2 {
   font-size: 40px;
@@ -165,7 +166,7 @@ p {
     margin-top: 20px;
     padding: 10px 0;
   }
-  .about-h3 {
+  .about-contact-h3 {
     font-size: 30px;
   }
   .about-p {
@@ -180,7 +181,7 @@ p {
     padding-bottom: 60px;
   }
 
-  .about-body {
+  .about-contact-body {
     padding: 10px;
     text-align: center;
   }
