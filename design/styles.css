@@ -5,7 +5,7 @@
   --hovering-color: #a2a8d3;
 }
 .hero-body {
-  padding: 60px 40px 98px;
+  padding: 80px 40px 98px;
   background: var(--primary-color);
 }
 
@@ -124,7 +124,7 @@ p {
   font-size: 37px;
 }
 .selfie {
-  padding: 80px 0 40px;
+  border: 1px solid var(--headings-color);
   width: 500px;
 }
 
