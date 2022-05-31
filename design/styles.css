@@ -63,10 +63,12 @@ p {
 .discover-more-link {
   background: var(--headings-color);
   color: var(--primary-color);
+  font-size: 20px;
   padding: 15px 20px;
   text-align: center;
 }
 .discover-more-link:hover,
+.discover-my-projects:hover,
 .contact-me-link:hover,
 .learn-more-about-rome:hover,
 .learn-more-about-weather-hub:hover,
@@ -118,14 +120,32 @@ p {
   padding: 60px;
 }
 
+.about-h3 {
+  font-size: 37px;
+}
 .selfie {
+  padding: 80px 0 40px;
   width: 500px;
+}
+
+.discover-my-projects {
+  background: var(--primary-color);
+  border: 1px solid var(--headings-color);
+  color: var(--headings-color);
+  font-size: 20px;
+  text-align: start;
+  padding: 15px 20px;
+}
+.projects-link {
+  padding-top: 40px;
+  text-align: start;
 }
 
 @media (max-width: 900px) {
   h1,
   small {
     font-size: 65px;
+    padding-bottom: 0;
   }
   h3 {
     font-size: 30px;
@@ -133,6 +153,10 @@ p {
   }
   p {
     font-size: 20px;
+  }
+  .about-body {
+    padding: 10px;
+    text-align: center;
   }
   .projects-body {
     padding: 0;
@@ -157,6 +181,9 @@ p {
   }
 
   .discover-more-link {
-    padding: 15px 83px;
+    padding: 15px 70px;
+  }
+  .projects-link {
+    text-align: center;
   }
 }
