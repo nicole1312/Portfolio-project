@@ -4,17 +4,18 @@
   --paragraphs-color: #093052;
   --hovering-color: #a2a8d3;
 }
-.hero-body {
-  padding: 80px 40px 98px;
-  background: var(--primary-color);
-}
-
 .navbar-toggler:hover,
 .navbar-brand:hover {
   transition: all 200ms ease-in-out;
   opacity: 0.7;
 }
-
+.text {
+  line-height: 1.2;
+}
+.hero-body {
+  padding: 80px 40px 98px;
+  background: var(--primary-color);
+}
 h1 {
   color: var(--paragraphs-color);
   font-size: 98px;
@@ -56,10 +57,7 @@ p {
   font-size: 20px;
   letter-spacing: -1px;
 }
-.link-buttons {
-  text-align: center;
-  padding: 60px;
-}
+
 .discover-more-link {
   background: var(--headings-color);
   color: var(--primary-color);
@@ -72,62 +70,24 @@ p {
 .contact-me-link:hover,
 .learn-more-about-rome:hover,
 .learn-more-about-weather-hub:hover,
-.learn-more-about-croissants:hover {
+.learn-more-about-dictionary-app:hover,
+.learn-more-about-translation-app:hover {
   color: var(--hovering-color);
-}
-
-.projects-body {
-  background: var(--primary-color);
-  padding: 50px;
-}
-.travel-heading,
-.weather-heading,
-.croissants-heading {
-  margin: 40px;
-}
-
-.travel-link,
-.weather-link,
-.croissants-link {
-  margin: 40px 0 40px;
-  text-align: start;
-}
-.text {
-  line-height: 1.2;
-}
-
-.learn-more-about-rome,
-.learn-more-about-weather-hub,
-.learn-more-about-croissants {
-  background: var(--headings-color);
-  color: var(--primary-color);
-  font-size: 20px;
-  padding: 15px 20px;
-}
-.rome-img {
-  width: 500px;
-  margin-top: 50px;
-}
-.weather-img {
-  width: 500px;
-  margin-top: 40px;
-}
-.croissants-img {
-  width: 600px;
-  margin-top: 80px;
 }
 .about-body {
   padding: 60px;
 }
-
 .about-h3 {
+  color: var(--headings-color);
+  font-family: "Oswald", sans-serif;
   font-size: 37px;
+  font-weight: bold;
 }
 .selfie {
   border: 1px solid var(--headings-color);
-  width: 500px;
+  margin-top: 70px;
+  width: 400px;
 }
-
 .discover-my-projects {
   background: var(--primary-color);
   border: 1px solid var(--headings-color);
@@ -141,19 +101,85 @@ p {
   text-align: start;
 }
 
+.projects-body {
+  background: var(--primary-color);
+}
+.projects-h1 {
+  padding-top: 60px;
+  font-size: 75px;
+}
+.projects-h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+}
+.project-rome-p,
+.project-weather-p,
+.dictionary-p,
+.translation-p {
+  font-size: 15px;
+  padding: 15px;
+  text-align: center;
+}
+.travel-heading,
+.weather-heading,
+.dictionary-heading,
+.translation-heading {
+  font-size: 30px;
+  padding: 30px 0 5px;
+  margin-top: 30px;
+}
+
+.learn-more-about-rome,
+.learn-more-about-weather-hub,
+.learn-more-about-dictionary-app,
+.learn-more-about-translation-app {
+  background: var(--headings-color);
+  color: var(--primary-color);
+  font-size: 20px;
+  padding: 15px 20px;
+}
+.rome-img,
+.weather-img,
+.dictionary-img,
+.translation-img {
+  padding: 20px;
+  width: 500px;
+}
+
 @media (max-width: 900px) {
   h1,
-  small {
-    font-size: 65px;
+  small,
+  .projects-h1 {
+    font-size: 60px;
     padding-bottom: 0;
   }
-  h3 {
+  h2 {
+    font-size: 40px;
+    padding-bottom: 0;
+  }
+  h3,
+  .projects-h2 {
+    font-size: 26px;
+    margin-top: 20px;
+    padding: 10px 0;
+  }
+  .about-h3 {
     font-size: 30px;
-    margin: 0;
+  }
+  .about-p {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  h4 {
+    padding-top: 30px;
   }
   p {
     font-size: 20px;
+    padding-bottom: 60px;
   }
+
   .about-body {
     padding: 10px;
     text-align: center;
@@ -161,29 +187,15 @@ p {
   .projects-body {
     padding: 0;
   }
-  .travel-heading,
-  .weather-heading,
-  .croissants-heading {
-    margin-top: 0;
-  }
-
-  .travel-link,
-  .weather-link,
-  .croissants-link {
-    margin: 0;
-    text-align: center;
-  }
-
-  .learn-more-about-rome,
-  .learn-more-about-weather-hub,
-  .learn-more-about-croissants {
-    padding: 15px 110px;
-  }
-
-  .discover-more-link {
-    padding: 15px 70px;
-  }
   .projects-link {
     text-align: center;
+  }
+  .discover-my-projects,
+  .discover-more-link,
+  .learn-more-about-rome,
+  .learn-more-about-weather-hub,
+  .learn-more-about-dictionary-app,
+  .learn-more-about-translation-app {
+    font-size: 18px;
   }
 }
