@@ -79,7 +79,7 @@ p {
 }
 .about-contact-body {
   padding: 40px 20px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .about-contact-h1 {
   font-size: 90px;
@@ -168,13 +168,22 @@ p {
 }
 .email,
 .linkedin,
-.instagram {
+.instagram,
+.github-link {
   color: var(--headings-color);
   text-decoration: none;
 }
+.email {
+  color: var(--paragraphs-color);
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  padding-bottom: 60px;
+}
 .email:hover,
 .linkedin:hover,
-.instagram:hover {
+.instagram:hover,
+.github-link:hover {
   color: var(--hovering-color);
 }
 
@@ -207,6 +216,18 @@ p {
 .get-creative {
   color: var(--headings-color);
   font-size: 28px;
+}
+.imagine-p {
+  border: 1px solid var(--hovering-color);
+  border-radius: 10px;
+  background: var(--primary-color);
+  color: var(--headings-color);
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  margin-top: 285px;
+  padding: 180px 0;
+  width: 380px;
 }
 
 @media (max-width: 900px) {
@@ -269,7 +290,7 @@ p {
   .linkedin-icon,
   .instagram-icon {
     padding: 10px;
-    margin: 60px 0 -25px;
+    margin: 30px 0 -25px;
   }
   .work-box {
     padding: 40px;
@@ -280,5 +301,12 @@ p {
   .get-in-touch-link {
     font-size: 18px;
     margin: 0;
+  }
+  .imagine-p {
+    font-size: 30px;
+    margin-top: 0;
+    margin-left: 45px;
+    padding: 80px 0;
+    width: 300px;
   }
 }
