@@ -10,7 +10,7 @@
   opacity: 0.7;
 }
 
-.text {
+.text p {
   line-height: 1.2;
 }
 .hero-body {
@@ -73,11 +73,13 @@ p {
 .learn-more-about-rome:hover,
 .learn-more-about-weather-hub:hover,
 .learn-more-about-dictionary-app:hover,
-.learn-more-about-translation-app:hover {
+.learn-more-about-translation-app:hover,
+.get-in-touch-link:hover {
   color: var(--hovering-color);
 }
 .about-contact-body {
-  padding: 60px;
+  padding: 40px 20px;
+  margin-bottom: 50px;
 }
 .about-contact-h1 {
   font-size: 90px;
@@ -156,6 +158,14 @@ p {
   padding: 20px;
   width: 500px;
 }
+.get-in-touch-link {
+  background: var(--headings-color);
+  color: var(--primary-color);
+  font-size: 20px;
+  padding: 15px 20px;
+  margin-left: 160px;
+  text-align: center;
+}
 .email,
 .linkedin,
 .instagram {
@@ -171,8 +181,8 @@ p {
 .social-media-links {
   display: flex;
   justify-content: center;
-  font-size: 24px;
-  margin-top: 40px;
+  font-size: 25px;
+  margin-top: 20px;
 }
 
 .email-icon,
@@ -181,7 +191,7 @@ p {
 .instagram-icon {
   color: var(--headings-color);
   margin-top: 40px;
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
 }
 .email-icon:hover,
@@ -189,6 +199,14 @@ p {
 .linkedin-icon:hover,
 .instagram-icon:hover {
   color: var(--hovering-color);
+}
+.work-box {
+  background: white;
+  padding: 30px;
+}
+.get-creative {
+  color: var(--headings-color);
+  font-size: 28px;
 }
 
 @media (max-width: 900px) {
@@ -251,5 +269,16 @@ p {
   .linkedin-icon,
   .instagram-icon {
     padding: 10px;
+    margin: 60px 0 -25px;
+  }
+  .work-box {
+    padding: 40px;
+  }
+  .get-creative {
+    margin-bottom: -40px;
+  }
+  .get-in-touch-link {
+    font-size: 18px;
+    margin: 0;
   }
 }
