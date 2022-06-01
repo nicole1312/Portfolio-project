@@ -227,7 +227,7 @@ p {
   font-weight: bold;
   margin-top: 285px;
   padding: 180px 0;
-  width: 380px;
+  width: 370px;
 }
 
 @media (max-width: 900px) {
@@ -305,8 +305,12 @@ p {
   .imagine-p {
     font-size: 30px;
     margin-top: 0;
-    margin-left: 45px;
+    margin: auto;
     padding: 80px 0;
-    width: 300px;
+    width: 250px;
+  }
+  .email {
+    text-align: center;
+    font-size: 25px;
   }
 }
