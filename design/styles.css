@@ -14,7 +14,7 @@
   line-height: 1.2;
 }
 .hero-body {
-  padding: 80px 40px 60px;
+  padding: 60px 40px 40px;
   background: var(--primary-color);
 }
 h1 {
@@ -79,7 +79,7 @@ p {
 }
 .about-contact-body {
   padding: 40px 20px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 .about-contact-h1 {
   font-size: 90px;
@@ -90,6 +90,7 @@ p {
   font-size: 37px;
   font-weight: bold;
 }
+
 .about-contact {
   padding: 20px;
 }
@@ -167,8 +168,7 @@ p {
   text-align: center;
 }
 .email,
-.linkedin,
-.instagram,
+.linkedin-link,
 .github-link {
   color: var(--headings-color);
   text-decoration: none;
@@ -181,8 +181,7 @@ p {
   padding-bottom: 60px;
 }
 .email:hover,
-.linkedin:hover,
-.instagram:hover,
+.linkedin-link:hover,
 .github-link:hover {
   color: var(--hovering-color);
 }
@@ -196,8 +195,7 @@ p {
 
 .email-icon,
 .github-icon,
-.linkedin-icon,
-.instagram-icon {
+.linkedin-icon {
   color: var(--headings-color);
   margin-top: 40px;
   padding: 10px;
@@ -205,8 +203,7 @@ p {
 }
 .email-icon:hover,
 .github-icon:hover,
-.linkedin-icon:hover,
-.instagram-icon:hover {
+.linkedin-icon:hover {
   color: var(--hovering-color);
 }
 .work-box {
@@ -225,9 +222,17 @@ p {
   font-size: 50px;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
-  margin-top: 285px;
-  padding: 180px 0;
-  width: 370px;
+  margin-top: 330px;
+  padding: 100px 0;
+  width: 440px;
+}
+.coder {
+  font-size: 13px;
+  font-family: monospace;
+}
+.open-source-link {
+  color: #578bbe;
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {
@@ -287,8 +292,7 @@ p {
   }
   .email-icon,
   .github-icon,
-  .linkedin-icon,
-  .instagram-icon {
+  .linkedin-icon {
     padding: 10px;
     margin: 30px 0 -25px;
   }
@@ -302,6 +306,10 @@ p {
     font-size: 18px;
     margin: 0;
   }
+  .github,
+  .linkedin {
+    padding: 0;
+  }
   .imagine-p {
     font-size: 30px;
     margin-top: 0;
@@ -311,6 +319,10 @@ p {
   }
   .email {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
+  }
+  .coder {
+    font-size: 11px;
+    padding: 0;
   }
 }
