@@ -153,11 +153,16 @@ p {
   padding: 15px 20px;
 }
 .rome-img,
-.weather-img,
-.dictionary-img,
 .translation-img {
   padding: 20px;
   width: 500px;
+}
+.weather-img {
+  width: 600px;
+}
+.dictionary-img {
+  padding: 40px;
+  width: 580px;
 }
 .get-in-touch-link {
   background: var(--headings-color);
@@ -235,7 +240,7 @@ p {
   text-decoration: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   h1,
   small,
   .projects-h1,
@@ -252,6 +257,12 @@ p {
     font-size: 26px;
     margin-top: 20px;
     padding: 10px 0;
+  }
+  .weather-img {
+    width: 500px;
+  }
+  .dictionary-app {
+    width: 400px;
   }
   .about-contact-h3 {
     font-size: 30px;
