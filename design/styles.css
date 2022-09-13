@@ -12,10 +12,20 @@
 .text p {
   line-height: 1.2;
 }
+html {
+  background-color: #edf8ff;
+}
 .hero-body {
-  background-image: url("../images/wales.png");
+  background-color: #edf8ff;
   background-size: cover;
   margin-bottom: -17px;
+}
+.hero-case {
+  background-color: rgba(177, 181, 206, 0.5);
+  background-size: cover;
+  color: #fff;
+  margin: 55px 50px -20px;
+  padding: 0 0 55px;
 }
 h1 {
   color: var(--paragraphs-color);
@@ -34,7 +44,7 @@ h2 {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 h3 {
   color: var(--headings-color);
@@ -59,13 +69,14 @@ p {
   letter-spacing: -1px;
   text-align: center;
 }
+
 .discover-more-link {
-  background: var(--headings-color);
-  border-radius: 12px;
-  box-shadow: 1px 1px 8px rgb(117, 119, 133);
-  color: var(--primary-color);
+  background-color: rgba(245, 246, 249, 0.702);
+  border-radius: 4px;
+  box-shadow: 1px 1px 12px rgb(187, 193, 224);
+  color: var(--headings-color);
   font-size: 20px;
-  opacity: 0.7;
+  font-weight: bolder;
   padding: 15px 20px;
   text-align: center;
 }
@@ -103,12 +114,12 @@ p {
   width: 400px;
 }
 .discover-my-projects {
-  background: var(--primary-color);
-  border: 1px solid var(--headings-color);
-  border-radius: 12px;
+  background-color: rgba(245, 246, 249, 0.302);
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px rgb(117, 119, 133);
   color: var(--headings-color);
   font-size: 20px;
-  opacity: 0.7;
+  font-weight: bolder;
   padding: 15px 20px;
   text-align: center;
 }
@@ -117,65 +128,55 @@ p {
   text-align: start;
 }
 .projects-body {
-  background-image: url(/images/londonuk1.png);
+  background-color: #edf8ff;
   background-size: cover;
+  margin-bottom: -17px;
 }
+.projects-case {
+  background-color: rgba(177, 181, 206, 0.5);
+  background-size: cover;
+  color: #fff;
+  margin: 55px 50px -20px;
+  padding: 10px 0 55px;
+}
+
 .projects-h1 {
-  padding-top: 60px;
-  font-size: 75px;
+  color: var(--headings-color);
+  font-size: 45px;
   font-weight: bold;
+  margin: 60px 0 40px;
+  padding-top: -20px;
 }
-.projects-h2 {
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  margin: 20px;
+.row {
+  display: flex;
+  justify-content: center;
 }
-.project-travel-p,
-.project-weather-p,
-.dictionary-p,
-.translation-p {
-  font-size: 15px;
-  padding: 15px;
-  text-align: center;
+.discover-travel,
+.discover-weather,
+.discover-dictionary,
+.discover-translation {
+  box-shadow: 1px 1px 8px rgb(117, 119, 133);
+  transition: all 500ms ease-in-out;
+  margin: 0 auto;
 }
-.travel-heading,
-.weather-heading,
-.dictionary-heading,
-.translation-heading {
-  font-size: 30px;
-  padding: 30px 0 5px;
-  margin-top: 30px;
+.discover-travel:hover,
+.discover-weather:hover,
+.discover-dictionary:hover,
+.discover-translation:hover {
+  border: 1px solid #edeff6;
+  transform: scale(1.1);
+  box-shadow: 1px 1px 8px rgb(237, 239, 246);
 }
-.learn-more-about-travel,
-.learn-more-about-weather-hub,
-.learn-more-about-dictionary-app,
-.learn-more-about-translation-app {
-  background: var(--headings-color);
-  color: var(--primary-color);
-  font-size: 20px;
-  padding: 15px 20px;
-}
-.travel-img {
-  width: 50;
-}
-.translation-img {
-  padding: 20px;
-  width: 500px;
-}
-.weather-img {
-  width: 600px;
-}
-.dictionary-img {
-  padding: 40px;
-  width: 580px;
-}
+
 .get-in-touch-link {
-  background: var(--headings-color);
-  color: var(--primary-color);
+  background-color: rgba(56, 89, 139, 0.818);
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px rgb(117, 119, 133);
+  color: var(--primary-colorprimary-color);
   font-size: 20px;
-  padding: 15px 20px;
+  font-weight: bolder;
   margin-left: 160px;
+  padding: 15px 20px;
   text-align: center;
 }
 .contact-body {
@@ -185,7 +186,11 @@ p {
   margin-bottom: -17px;
 }
 .contact-h1 {
-  font-size: 90px;
+  font-size: 80px;
+  margin: 60px 20px -70px;
+}
+small {
+  font-size: 80px;
 }
 .contact-h3 {
   color: var(--headings-color);
@@ -194,13 +199,12 @@ p {
   font-weight: bold;
 }
 .contact {
-  margin: 20px;
+  margin: 20px 5px 30px;
 }
 .email,
 .linkedin-link,
 .github-link {
   color: var(--headings-color);
-  text-decoration: none;
 }
 .email {
   color: var(--paragraphs-color);
@@ -234,7 +238,8 @@ p {
   color: var(--hovering-color);
 }
 .work-box {
-  background: white;
+  background-color: rgba(245, 246, 249, 0.302);
+  color: #fff;
   padding: 30px;
 }
 .get-creative {
@@ -252,28 +257,28 @@ p {
   text-decoration: none;
 }
 @media (max-width: 576px) {
+  .hero-case,
+  .projects-case {
+    margin: 55px 30px -20px;
+  }
   h1,
   small,
-  .projects-h1,
-  .about-contact-h1 {
-    font-size: 60px;
-    padding-bottom: 0;
+  .projects-h1 {
+    font-size: 50px;
+    padding: 0;
   }
   h2 {
     font-size: 40px;
     padding-bottom: 0;
   }
-  h3,
-  .projects-h2 {
+  h3 {
     font-size: 26px;
     margin-top: 20px;
-    padding: 10px 0;
+    padding: 10px 5px;
   }
-  .weather-img {
-    width: 500px;
-  }
-  .dictionary-app {
-    width: 400px;
+  .about-strong {
+    font-size: 60px;
+    margin-top: -20px;
   }
   .about-h3 {
     font-size: 30px;
@@ -300,20 +305,6 @@ p {
     font-size: 20px;
     padding: 20px 20px 40px;
   }
-  .projects-body {
-    padding: 0;
-  }
-  .projects-link {
-    text-align: center;
-  }
-  .discover-my-projects,
-  .discover-more-link,
-  .learn-more-about-travel,
-  .learn-more-about-weather-hub,
-  .learn-more-about-dictionary-app,
-  .learn-more-about-translation-app {
-    font-size: 18px;
-  }
   .email-icon,
   .github-icon,
   .linkedin-icon {
@@ -326,10 +317,7 @@ p {
   .get-creative {
     margin-bottom: -40px;
   }
-  .get-in-touch-link {
-    font-size: 18px;
-    margin: 0;
-  }
+
   .github,
   .linkedin {
     padding: 0;
