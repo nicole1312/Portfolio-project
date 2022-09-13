@@ -153,11 +153,15 @@ p {
 }
 .discover-travel,
 .discover-weather,
-.discover-dictionary,
-.discover-translation {
+.discover-dictionary {
   box-shadow: 1px 1px 8px rgb(117, 119, 133);
   transition: all 500ms ease-in-out;
   margin: 0 auto;
+}
+.discover-translation {
+  box-shadow: 1px 1px 8px rgb(117, 119, 133);
+  transition: all 500ms ease-in-out;
+  margin: 8px auto;
 }
 .discover-travel:hover,
 .discover-weather:hover,
@@ -264,8 +268,15 @@ small {
   h1,
   small,
   .projects-h1 {
-    font-size: 50px;
-    padding: 0;
+    font-size: 25px;
+    margin-top: 30px;
+    padding: 0 13px;
+  }
+  .discover-weather {
+    margin-top: 25px;
+  }
+  .discover-translation {
+    margin-top: 25px;
   }
   h2 {
     font-size: 40px;
