@@ -51,7 +51,6 @@ h1 {
   right: 0%;
   bottom: 0%;
 }
-
 @keyframes bauble1 {
   0% {
     background-color: rgba(170, 201, 247, 0.518);
@@ -61,7 +60,6 @@ h1 {
     background-color: rgba(108, 154, 224, 0.418);
     ransform: translate(180px, 20px);
   }
-
   100% {
     background-color: rgba(80, 125, 191, 0.356);
     transform: translate(-350px, -50px);
@@ -99,7 +97,6 @@ h1 {
     transform: translate(-350px, -50px);
   }
 }
-
 .ball {
   height: 150px;
   width: 150px;
@@ -152,7 +149,6 @@ h1 {
     transform: translate(700px);
   }
 }
-
 .g-container {
   color: #38598b;
   filter: contrast(15);
@@ -224,10 +220,6 @@ h1 {
   font-size: 40px;
   font-weight: bolder;
 }
-small {
-  color: var(--headings-color);
-  font-size: 98px;
-}
 h2 {
   color: var(--headings-color);
   font-size: 60px;
@@ -270,7 +262,6 @@ p {
   left: 10%;
 }
 .discover-more-link:hover,
-.contact-me-link:hover,
 .get-in-touch-link:hover {
   color: var(--headings-color);
 }
@@ -289,14 +280,10 @@ p {
   font-size: 37px;
   font-weight: bold;
 }
-.about {
+.about-p {
   margin: 20px;
 }
-.selfie {
-  border: 1px solid var(--headings-color);
-  margin-top: 70px;
-  width: 400px;
-}
+
 .discover-my-projects {
   background-color: rgba(245, 246, 249, 0.302);
   border-radius: 4px;
@@ -323,7 +310,6 @@ p {
   margin: 55px 50px -20px;
   padding: 10px 0 55px;
 }
-
 .projects-h1 {
   color: var(--headings-color);
   font-size: 45px;
@@ -355,7 +341,6 @@ p {
   transform: scale(1.1);
   box-shadow: 1px 1px 8px rgb(237, 239, 246);
 }
-
 .get-in-touch-link {
   background-color: rgba(56, 89, 139, 0.818);
   border-radius: 4px;
@@ -367,29 +352,6 @@ p {
   padding: 15px 20px;
   text-align: center;
 }
-.contact-body {
-  background-image: url("../images/city.png");
-  background-size: cover;
-  padding: 10px 0 0;
-  margin-bottom: -17px;
-}
-.contact-h1 {
-  font-size: 80px;
-  margin: 60px 20px -70px;
-}
-small {
-  font-size: 80px;
-}
-.contact-h3 {
-  color: var(--headings-color);
-  font-family: "Oswald", sans-serif;
-  font-size: 37px;
-  font-weight: bold;
-}
-.contact {
-  margin: 20px 5px 30px;
-}
-
 .linkedin-link,
 .github-link {
   color: var(--headings-color);
@@ -426,9 +388,54 @@ small {
   color: var(--hovering-color);
 }
 .work-box {
-  background-color: rgba(245, 246, 249, 0.302);
-  color: #fff;
-  padding: 30px;
+  background-image: url(/images/photo2.png);
+  background-size: cover;
+  box-shadow: 3px 3px 40px rgba(167, 168, 173, 0.8);
+  padding: 20px;
+  margin: 50px auto;
+}
+form {
+  max-width: 420px;
+  margin: 50px auto;
+}
+.message-input {
+  color: var(--headings-color);
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 4px;
+  line-height: 20px;
+  background-color: rgba(167, 168, 173, 0.2);
+  border: 2px groove #bcc3c9;
+  transition: all 0.3s;
+  padding: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+.message-input:focus {
+  border: 2px solid var(--headings-color);
+}
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+[type="submit"] {
+  font-family: fantasy;
+  width: 100%;
+  background: rgba(167, 168, 173, 0.2);
+  border-radius: 4px;
+  border: 2px groove #bcc3c9;
+  color: var(--headings-color);
+  font-size: 20px;
+  padding: 10px;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  color: var(--hovering-color);
 }
 .get-creative {
   color: var(--headings-color);
@@ -477,17 +484,19 @@ small {
   }
   .ball {
     animation: none;
-    border-radius: 10px;
-    margin: 10px auto;
+    border-radius: 4px;
+    box-shadow: 3px 3px 40px rgba(249, 250, 255, 0.8);
+    margin: 25px auto;
     position: relative;
     height: 50px;
-    width: 150px;
+    width: 200px;
   }
   .discover-more-link {
-    padding-bottom: -150px;
+    position: relative;
+    top: 10px;
+    left: 30px;
   }
   h1,
-  small,
   .projects-h1 {
     font-size: 25px;
     margin-top: 30px;
@@ -516,14 +525,7 @@ small {
     font-size: 30px;
     padding: 0;
   }
-  .contact-h3 {
-    font-size: 30px;
-    padding: 0;
-  }
   .about {
-    padding: 30px;
-  }
-  .contact {
     padding: 30px;
   }
   .about-p {
@@ -549,7 +551,6 @@ small {
   .get-creative {
     margin-bottom: -40px;
   }
-
   .github,
   .linkedin {
     padding: 0;
