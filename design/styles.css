@@ -20,9 +20,10 @@ html {
 .hero-case {
   background-color: rgba(177, 181, 206, 0.5);
   background-size: cover;
+  border-radius: 4px;
   box-shadow: 1px 1px 12px rgb(166, 172, 201);
   color: #fff;
-  margin: 60px 50px -20px;
+  margin: 120px 70px -20px;
   padding: 0 0 55px;
 }
 h1 {
@@ -54,7 +55,7 @@ h1 {
 @keyframes bauble1 {
   0% {
     background-color: rgba(170, 201, 247, 0.518);
-    transform: translate(-480px, -550px);
+    transform: translate(-480px, -500px);
   }
   50% {
     background-color: rgba(108, 154, 224, 0.418);
@@ -78,16 +79,14 @@ h1 {
 @keyframes bauble2 {
   0% {
     background-color: rgba(170, 201, 247, 0.518);
-    transform: translate(-700px, -550px);
+    transform: translate(-700px, -450px);
   }
-  25% {
-    background-color: rgba(80, 125, 191, 0.456);
-    transform: translate(-80px, -200px);
-  }
+
   50% {
     background-color: rgba(108, 154, 224, 0.318);
-    ransform: translate(80px);
+    ransform: translate(80px, 120px);
   }
+
   80% {
     background-color: rgba(80, 125, 191, 0.256);
     transform: translate(-80px, -50px);
@@ -111,7 +110,7 @@ h1 {
 @keyframes ball {
   0% {
     background-color: rgba(80, 125, 191, 0.256);
-    transform: translate(-280px, -550px);
+    transform: translate(-280px, -450px);
   }
   50% {
     background-color: rgba(3, 78, 190, 0.356);
@@ -143,10 +142,10 @@ h1 {
     transform: translate(80px, 40px);
   }
   50% {
-    transform: translate(80px, 40px);
+    transform: translate(180px, 80px);
   }
   100% {
-    transform: translate(700px);
+    transform: translate(700px, 20px);
   }
 }
 .g-container {
@@ -200,56 +199,40 @@ h1 {
   position: relative;
   height: 400px;
   width: 400px;
-  animation: nudge 60s infinite alternate;
+  animation: text-nudge 40s infinite alternate;
   box-shadow: 3px 3px 40px rgba(249, 250, 255, 0.8);
   border-radius: 100%;
 }
 .text {
   color: var(--headings-color);
-  font-size: 26px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 700;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 100%;
-  padding: 50px 30px;
+  padding: 50px;
+}
+@keyframes text-nudge {
+  0% {
+    transform: translate(80px, 40px);
+  }
+  50% {
+    transform: translate(80px, -20px);
+  }
+  100% {
+    transform: translate(400px, 20px);
+  }
 }
 .quote {
   color: var(--primary-color);
   font-family: fantasy;
   font-size: 40px;
   font-weight: bolder;
-}
-h2 {
-  color: var(--headings-color);
-  font-size: 60px;
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 50px;
-}
-h3 {
-  color: var(--headings-color);
-  font-size: 40px;
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  margin: 20px;
-}
-h4 {
-  color: var(--paragraphs-color);
-  font-size: 30px;
-  font-family: "Oswald", sans-serif;
-  font-weight: bolder;
-  text-align: center;
-  padding: 60px 5px 0 5px;
-}
-p {
-  color: var(--headings-color);
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 30px;
-  letter-spacing: -1.5px;
-  text-align: center;
+  padding-left: 40px;
 }
 .discover-more-link {
   color: var(--primary-color);
@@ -261,42 +244,60 @@ p {
   top: 38%;
   left: 10%;
 }
-.discover-more-link:hover,
-.get-in-touch-link:hover {
+.discover-more-link:hover {
   color: var(--headings-color);
 }
 .about-body {
   background-color: #edf8ff;
   background-size: cover;
   padding: 10px 0 0;
-  margin-bottom: -17px;
+  margin: auto 0;
+}
+.about-case {
+  background-color: rgba(177, 181, 206, 0.5);
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: 1px 1px 12px rgb(166, 172, 201);
+  color: #fff;
+  margin: 110px 70px -20px;
+  padding: 0 0 55px;
 }
 .about-h1 {
-  font-size: 90px;
-}
-.about-h3 {
-  color: var(--headings-color);
-  font-family: "Oswald", sans-serif;
-  font-size: 37px;
-  font-weight: bold;
-}
-.about-p {
-  margin: 20px;
-}
-
-.discover-my-projects {
-  background-color: rgba(245, 246, 249, 0.302);
+  box-shadow: 3px 3px 40px rgb(249, 250, 255);
   border-radius: 4px;
-  box-shadow: 1px 1px 4px rgb(117, 119, 133);
-  color: var(--headings-color);
+  color: var(--paragraphs-color);
   font-size: 20px;
-  font-weight: bolder;
-  padding: 15px 20px;
-  text-align: center;
-}
-.projects-link {
-  padding-top: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: -1px;
   text-align: start;
+  padding: 75px;
+  margin: 70px 10px 12px;
+}
+.contact-p {
+  color: #bcc3c9;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  letter-spacing: -1px;
+  margin: 0 30px;
+  padding: 0 20px;
+  text-align: start;
+}
+h3 {
+  color: #edf8ff;
+  font-family: fantasy;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: start;
+  margin: 5px 30px -20px;
+  padding: 20px;
+}
+.work-box {
+  background-image: url(/images/portrait.png);
+  background-size: cover;
+  box-shadow: 3px 3px 40px rgb(249, 250, 255);
+  border-radius: 4px;
+  padding: 10px;
+  margin: 70px -10px 10px;
 }
 .projects-body {
   background-color: #edf8ff;
@@ -306,9 +307,11 @@ p {
 .projects-case {
   background-color: rgba(177, 181, 206, 0.5);
   background-size: cover;
+  border-radius: 4px;
+  box-shadow: 1px 1px 12px rgb(166, 172, 201);
   color: #fff;
-  margin: 55px 50px -20px;
-  padding: 10px 0 55px;
+  margin: 120px 70px -20px;
+  padding: 0 0 55px;
 }
 .projects-h1 {
   color: var(--headings-color);
@@ -316,10 +319,6 @@ p {
   font-weight: bold;
   margin: 60px 0 40px;
   padding-top: -20px;
-}
-.row {
-  display: flex;
-  justify-content: center;
 }
 .discover-travel,
 .discover-weather,
@@ -341,17 +340,6 @@ p {
   transform: scale(1.1);
   box-shadow: 1px 1px 8px rgb(237, 239, 246);
 }
-.get-in-touch-link {
-  background-color: rgba(56, 89, 139, 0.818);
-  border-radius: 4px;
-  box-shadow: 1px 1px 4px rgb(117, 119, 133);
-  color: var(--primary-colorprimary-color);
-  font-size: 20px;
-  font-weight: bolder;
-  margin-left: 160px;
-  padding: 15px 20px;
-  text-align: center;
-}
 .linkedin-link,
 .github-link {
   color: var(--headings-color);
@@ -368,12 +356,6 @@ p {
 .github-link:hover {
   color: var(--hovering-color);
 }
-.social-media-links {
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
-  margin: 20px 0 10px;
-}
 .email-icon,
 .github-icon,
 .linkedin-icon {
@@ -387,29 +369,22 @@ p {
 .linkedin-icon:hover {
   color: var(--hovering-color);
 }
-.work-box {
-  background-image: url(/images/photo2.png);
-  background-size: cover;
-  box-shadow: 3px 3px 40px rgba(167, 168, 173, 0.8);
-  padding: 20px;
-  margin: 50px auto;
-}
 form {
   max-width: 420px;
-  margin: 50px auto;
+  margin: 20px auto;
 }
 .message-input {
-  color: var(--headings-color);
+  color: #edf8ff;
   font-family: "Oswald", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   border-radius: 4px;
   line-height: 20px;
-  background-color: rgba(167, 168, 173, 0.2);
+  background-color: rgba(167, 168, 173, 0.3);
   border: 2px groove #bcc3c9;
   transition: all 0.3s;
-  padding: 15px;
-  margin-bottom: 15px;
+  padding: 5px;
+  margin-bottom: 5px;
   width: 100%;
   box-sizing: border-box;
   outline: 0;
@@ -428,24 +403,30 @@ textarea {
   background: rgba(167, 168, 173, 0.2);
   border-radius: 4px;
   border: 2px groove #bcc3c9;
-  color: var(--headings-color);
+  color: #edf8ff;
   font-size: 20px;
   padding: 10px;
   transition: all 0.3s;
-  font-weight: 700;
+  font-weight: 300;
 }
 [type="submit"]:hover {
   color: var(--hovering-color);
 }
-.get-creative {
-  color: var(--headings-color);
+.contact {
+  color: #edf8ff;
   font-size: 28px;
+  padding: 20px;
+}
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin: 20px 0 0;
 }
 .coder {
   font-size: 13px;
   font-family: monospace;
   letter-spacing: -1px;
-  margin: 15px;
 }
 .open-source-link {
   color: #578bbe;
@@ -477,13 +458,14 @@ textarea {
     width: 250px;
   }
   .text {
-    font-size: 17px;
+    font-size: 15px;
   }
   .quote {
-    font-size: 25px;
+    font-size: 20px;
   }
   .ball {
     animation: none;
+    background-color: #a8c9ea;
     border-radius: 4px;
     box-shadow: 3px 3px 40px rgba(249, 250, 255, 0.8);
     margin: 25px auto;
@@ -496,7 +478,6 @@ textarea {
     top: 10px;
     left: 30px;
   }
-  h1,
   .projects-h1 {
     font-size: 25px;
     margin-top: 30px;
@@ -508,37 +489,6 @@ textarea {
   .discover-translation {
     margin-top: 25px;
   }
-  h2 {
-    font-size: 40px;
-    padding-bottom: 0;
-  }
-  h3 {
-    font-size: 26px;
-    margin-top: 20px;
-    padding: 10px 5px;
-  }
-  .about-strong {
-    font-size: 60px;
-    margin-top: -20px;
-  }
-  .about-h3 {
-    font-size: 30px;
-    padding: 0;
-  }
-  .about {
-    padding: 30px;
-  }
-  .about-p {
-    padding-bottom: 20px;
-    text-align: center;
-  }
-  h4 {
-    padding-top: 20px;
-  }
-  p {
-    font-size: 20px;
-    padding: 20px 20px 40px;
-  }
   .email-icon,
   .github-icon,
   .linkedin-icon {
@@ -547,9 +497,6 @@ textarea {
   }
   .work-box {
     padding: 40px;
-  }
-  .get-creative {
-    margin-bottom: -40px;
   }
   .github,
   .linkedin {
@@ -561,6 +508,6 @@ textarea {
   }
   .coder {
     font-size: 11px;
-    padding: 0;
+    padding: 20px;
   }
 }
