@@ -29,7 +29,8 @@ html {
 h1 {
   color: rgba(161, 199, 238, 0.993);
   font-size: 55px;
-  font-family: fantasy;
+  font-family:"Josefin Sans", sans-serif;
+  font-weight: 800;
   text-align: center;
   padding: 80px;
 }
@@ -46,7 +47,7 @@ h1 {
   height: 100px;
   width: 100px;
   box-shadow: 3px 3px 40px rgba(249, 250, 255, 0.8);
-  animation: bauble1 8s ease-in-out infinite alternate;
+  animation: bauble1 48s ease-in-out infinite alternate;
   border-radius: 100%;
   position: absolute;
   right: 0%;
@@ -55,22 +56,26 @@ h1 {
 @keyframes bauble1 {
   0% {
     background-color: rgba(170, 201, 247, 0.518);
-    transform: translate(-480px, -500px);
+    transform: translate(-350px, -650px);
+  }
+  25%{
+    background-color: rgba(108, 154, 224, 0.418);
+    transform: translate(-680px, -150px);
   }
   50% {
     background-color: rgba(108, 154, 224, 0.418);
-    ransform: translate(180px, 20px);
+    transform: translate(-80px, -150px);
   }
   100% {
     background-color: rgba(80, 125, 191, 0.356);
-    transform: translate(-350px, -50px);
+    transform: translate(-350px, -150px);
   }
 }
 .bauble2 {
   height: 80px;
   width: 80px;
   box-shadow: 3px 3px 40px rgba(249, 250, 255, 0.6);
-  animation: bauble2 30s ease-in-out infinite alternate;
+  animation: bauble2 15s ease-in-out infinite alternate;
   border-radius: 100%;
   position: absolute;
   right: 0%;
@@ -79,21 +84,20 @@ h1 {
 @keyframes bauble2 {
   0% {
     background-color: rgba(170, 201, 247, 0.518);
-    transform: translate(-700px, -450px);
+    transform: translate(-800px, -450px);
   }
-
-  50% {
+  25% {
     background-color: rgba(108, 154, 224, 0.318);
-    ransform: translate(80px, 120px);
+    ransform: translate(180px, -120px);
   }
-
-  80% {
+  75% {
     background-color: rgba(80, 125, 191, 0.256);
-    transform: translate(-80px, -50px);
+    transform: translate(-280px, -140px);
   }
+ 
   100% {
     background-color: rgba(119, 152, 201, 0.156);
-    transform: translate(-350px, -50px);
+    transform: translate(-350px, -150px);
   }
 }
 .ball {
@@ -101,7 +105,7 @@ h1 {
   width: 150px;
   background-color: #578bbe;
   box-shadow: 3px 3px 40px rgba(249, 250, 255, 0.8);
-  animation: ball 13s ease-in-out infinite alternate;
+  animation: ball 33s ease-in-out infinite alternate;
   border-radius: 100%;
   position: absolute;
   right: 0%;
@@ -110,19 +114,19 @@ h1 {
 @keyframes ball {
   0% {
     background-color: rgba(80, 125, 191, 0.256);
-    transform: translate(-280px, -450px);
+    transform: translate(-680px, -600px);
   }
   50% {
     background-color: rgba(3, 78, 190, 0.356);
-    ransform: translate(80px, 20px);
+    transform: translate(-180px, -220px);
   }
   80% {
     background-color: rgba(108, 154, 224, 0.418);
-    transform: translate(-110px, -60px);
+    transform: translate(-100px, -80px);
   }
   100% {
     background-color: rgba(170, 201, 247, 0.518);
-    transform: translate(-350px, -50px);
+    transform: translate(-360px, -120px);
   }
 }
 @keyframes bounce {
@@ -151,7 +155,7 @@ h1 {
 .g-container {
   color: #38598b;
   filter: contrast(15);
-  font-family: fantasy;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 50px;
   position: relative;
 }
@@ -229,19 +233,19 @@ h1 {
 }
 .quote {
   color: var(--primary-color);
-  font-family: fantasy;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 40px;
   font-weight: bolder;
   padding-left: 40px;
 }
 .discover-more-link {
   color: var(--primary-color);
-  font-family: fantasy;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   font-weight: bolder;
   padding: -20px 25px;
   position: absolute;
-  top: 38%;
+  top: 40%;
   left: 10%;
 }
 .discover-more-link:hover {
@@ -260,49 +264,96 @@ h1 {
   box-shadow: 1px 1px 12px rgb(166, 172, 201);
   color: #fff;
   margin: 110px 70px -20px;
-  padding: 0 0 55px;
 }
 .about-h1 {
-  box-shadow: 3px 3px 40px rgb(249, 250, 255);
-  border-radius: 4px;
   color: var(--paragraphs-color);
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Josefin Sans", sans-serif;
   letter-spacing: -1px;
   text-align: start;
-  padding: 75px;
-  margin: 70px 10px 12px;
+  margin-top: 50px;
+ 
 }
 .contact-p {
   color: #bcc3c9;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: -1px;
-  margin: 0 30px;
+  line-height: 1;
+  margin: -25px 20px;
   padding: 0 20px;
   text-align: start;
 }
 h3 {
   color: #edf8ff;
-  font-family: fantasy;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 40px;
   font-weight: 600;
   text-align: start;
-  margin: 5px 30px -20px;
+  margin: 10px 20px -10px ;
   padding: 20px;
 }
 .work-box {
   background-image: url(/images/portrait.png);
-  background-size: cover;
-  box-shadow: 3px 3px 40px rgb(249, 250, 255);
+  background-size:cover;
+  box-shadow: 3px 3px 40px rgb(254, 255, 255);
   border-radius: 4px;
+  padding: 5px 15px 50px;
+  margin:  80px 20px;
+}
+form {
+  max-width: 420px;
+  margin: auto ;
+
+}
+.message-input {
+  color: #edf8ff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 4px;
+  line-height: 20px;
+  background-color: rgba(167, 168, 173, 0.3);
+  border: 1px groove rgba(167, 168, 173, 0.2);
+  transition: all 0.3s;
   padding: 10px;
-  margin: 70px -10px 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+.message-input:focus {
+  box-shadow: 2px 2px 20px var(--primary-color);
+}
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+[type="submit"] {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  width: 100%;
+  background: rgba(167, 168, 173, 0.2);
+  border-radius: 4px;
+  border: 1px groove rgba(167, 168, 173, 0.2);
+  color: #edf8ff;
+  font-size: 25px;
+  padding: 5px;
+  transition: all 0.3s;
+  
+}
+[type="submit"]:hover {
+  color: var(--hovering-color);
 }
 .projects-body {
   background-color: #edf8ff;
   background-size: cover;
   margin-bottom: -17px;
+}
+.row{
+  display: flex;
+  justify-content: center;
 }
 .projects-case {
   background-color: rgba(177, 181, 206, 0.5);
@@ -310,23 +361,24 @@ h3 {
   border-radius: 4px;
   box-shadow: 1px 1px 12px rgb(166, 172, 201);
   color: #fff;
-  margin: 120px 70px -20px;
-  padding: 0 0 55px;
+  margin: 100px 70px -20px;
+  padding: 0 0 75px;
 }
 .projects-h1 {
   color: var(--headings-color);
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
-  margin: 60px 0 40px;
-  padding-top: -20px;
+  margin: 60px 0 -20px;
+ 
 }
 .discover-travel,
-.discover-weather,
-.discover-dictionary {
+.discover-weather {
   box-shadow: 1px 1px 8px rgb(117, 119, 133);
   transition: all 500ms ease-in-out;
-  margin: 0 auto;
+  margin: auto ;
+  padding: 20px;
 }
+.discover-dictionary,
 .discover-translation {
   box-shadow: 1px 1px 8px rgb(117, 119, 133);
   transition: all 500ms ease-in-out;
@@ -340,22 +392,6 @@ h3 {
   transform: scale(1.1);
   box-shadow: 1px 1px 8px rgb(237, 239, 246);
 }
-.linkedin-link,
-.github-link {
-  color: var(--headings-color);
-}
-.email {
-  color: var(--paragraphs-color);
-  font-family: "Oswald", sans-serif;
-  font-size: 35px;
-  font-weight: bold;
-  padding-bottom: 60px;
-}
-.email:hover,
-.linkedin-link:hover,
-.github-link:hover {
-  color: var(--hovering-color);
-}
 .email-icon,
 .github-icon,
 .linkedin-icon {
@@ -368,54 +404,6 @@ h3 {
 .github-icon:hover,
 .linkedin-icon:hover {
   color: var(--hovering-color);
-}
-form {
-  max-width: 420px;
-  margin: 20px auto;
-}
-.message-input {
-  color: #edf8ff;
-  font-family: "Oswald", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  border-radius: 4px;
-  line-height: 20px;
-  background-color: rgba(167, 168, 173, 0.3);
-  border: 2px groove #bcc3c9;
-  transition: all 0.3s;
-  padding: 5px;
-  margin-bottom: 5px;
-  width: 100%;
-  box-sizing: border-box;
-  outline: 0;
-}
-.message-input:focus {
-  border: 2px solid var(--headings-color);
-}
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize: vertical;
-}
-[type="submit"] {
-  font-family: fantasy;
-  width: 100%;
-  background: rgba(167, 168, 173, 0.2);
-  border-radius: 4px;
-  border: 2px groove #bcc3c9;
-  color: #edf8ff;
-  font-size: 20px;
-  padding: 10px;
-  transition: all 0.3s;
-  font-weight: 300;
-}
-[type="submit"]:hover {
-  color: var(--hovering-color);
-}
-.contact {
-  color: #edf8ff;
-  font-size: 28px;
-  padding: 20px;
 }
 .social-media-links {
   display: flex;
@@ -448,7 +436,8 @@ textarea {
     margin: 20px auto;
   }
   .word {
-    padding-top: 40px;
+    font-size: 25px;
+    margin-top: -20px;
   }
   .text-container {
     animation: none;
@@ -461,7 +450,7 @@ textarea {
     font-size: 15px;
   }
   .quote {
-    font-size: 20px;
+    font-size: 15px;
   }
   .ball {
     animation: none;
@@ -497,14 +486,6 @@ textarea {
   }
   .work-box {
     padding: 40px;
-  }
-  .github,
-  .linkedin {
-    padding: 0;
-  }
-  .email {
-    text-align: center;
-    font-size: 20px;
   }
   .coder {
     font-size: 11px;
