@@ -1,8 +1,20 @@
 :root {
-  --primary-color: #f3f4f8;
+  --primary-color: #fff;
   --headings-color: #38598b;
   --paragraphs-color: #093052;
-  --hovering-color: #6f7eee;
+  --hovering-color: #caf1ff;
+  --framework-color:#edf8ff;
+  --shadow-color:0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px #fff,
+                0 0 82px #fff;
+  --element-shadow: 0 0 7px #bad7f4,
+                   0 0 10px #bad7f4,
+                   0 0 21px #fff,
+                   0 0 42px #fff,
+                   0 0 82px #fff;
+  --case-color:rgba(174, 212, 255, 0.5);
 }
 .navbar-toggler:hover,
 .navbar-brand:hover {
@@ -10,24 +22,24 @@
   opacity: 0.7;
 }
 html {
-  background-color: #edf8ff;
+  background-color: var(--framework-color);
 }
 .hero-body {
-  background-color: #edf8ff;
+  background-color: var(--framework-color);
   background-size: cover;
   margin-bottom: -17px;
 }
 .hero-case {
-  background-color: rgba(177, 181, 206, 0.5);
+  background-color: var(--case-color);
   background-size: cover;
-  border-radius: 4px;
-  box-shadow: 1px 1px 12px rgb(166, 172, 201);
-  color: #fff;
+  border-radius: 12px;
+  box-shadow:var(--element-shadow);
+  
   margin: 120px 70px -20px;
   padding: 0 0 55px;
 }
 h1 {
-  color: rgba(161, 199, 238, 0.993);
+  color:var(--primary-color);
   font-size: 55px;
   font-family:"Josefin Sans", sans-serif;
   font-weight: 800;
@@ -37,8 +49,7 @@ h1 {
 .element {
   height: 250px;
   width: 250px;
-  background-color: #578bbe;
-  box-shadow: 3px 3px 40px rgba(249, 250, 255, 0.8);
+  box-shadow:var(--shadow-color);
   animation: bounce 12s ease-in-out infinite alternate,
     nudge 12s linear infinite alternate;
   border-radius: 100%;
@@ -46,7 +57,7 @@ h1 {
 .bauble1 {
   height: 100px;
   width: 100px;
-  box-shadow: 3px 3px 40px rgba(249, 250, 255, 0.8);
+  box-shadow: var(--shadow-color);
   animation: bauble1 48s ease-in-out infinite alternate;
   border-radius: 100%;
   position: absolute;
@@ -55,26 +66,26 @@ h1 {
 }
 @keyframes bauble1 {
   0% {
-    background-color: rgba(170, 201, 247, 0.518);
+    background-color: rgb(255, 249, 194);
     transform: translate(-350px, -650px);
   }
   25%{
-    background-color: rgba(108, 154, 224, 0.418);
+    background-color: rgba(255, 249, 194, 0.9);
     transform: translate(-680px, -150px);
   }
   50% {
-    background-color: rgba(108, 154, 224, 0.418);
+    background-color: rgb(222, 253, 224);
     transform: translate(-80px, -150px);
   }
   100% {
-    background-color: rgba(80, 125, 191, 0.356);
+    background-color: rgba(222, 253, 224, 0.9);
     transform: translate(-350px, -150px);
   }
 }
 .bauble2 {
   height: 80px;
   width: 80px;
-  box-shadow: 3px 3px 40px rgba(249, 250, 255, 0.6);
+  box-shadow: var(--shadow-color);
   animation: bauble2 15s ease-in-out infinite alternate;
   border-radius: 100%;
   position: absolute;
@@ -83,28 +94,27 @@ h1 {
 }
 @keyframes bauble2 {
   0% {
-    background-color: rgba(170, 201, 247, 0.518);
+    background-color: rgb(240, 222, 253);
     transform: translate(-800px, -450px);
   }
   25% {
-    background-color: rgba(108, 154, 224, 0.318);
+    background-color: rgba(240, 222, 253, 0.8);
     ransform: translate(180px, -120px);
   }
   75% {
-    background-color: rgba(80, 125, 191, 0.256);
+    background-color: rgba(255, 221, 221, 0.9);
     transform: translate(-280px, -140px);
   }
  
   100% {
-    background-color: rgba(119, 152, 201, 0.156);
+    background-color: rgba(255, 221, 221);
     transform: translate(-350px, -150px);
   }
 }
 .ball {
   height: 150px;
   width: 150px;
-  background-color: #578bbe;
-  box-shadow: 3px 3px 40px rgba(249, 250, 255, 0.8);
+  box-shadow: var(--shadow-color);
   animation: ball 33s ease-in-out infinite alternate;
   border-radius: 100%;
   position: absolute;
@@ -113,32 +123,37 @@ h1 {
 }
 @keyframes ball {
   0% {
-    background-color: rgba(80, 125, 191, 0.256);
+    background-color: rgba(202, 241, 255, 0.2);
     transform: translate(-680px, -600px);
   }
   50% {
-    background-color: rgba(3, 78, 190, 0.356);
+    background-color: rgba(202, 241, 255, 0.4);
     transform: translate(-180px, -220px);
   }
   80% {
-    background-color: rgba(108, 154, 224, 0.418);
+    background-color: rgba(174, 212, 255, 0.5);
     transform: translate(-100px, -80px);
   }
   100% {
-    background-color: rgba(170, 201, 247, 0.518);
+    background-color: rgba(174, 212, 255, 0.6);
     transform: translate(-360px, -120px);
   }
 }
 @keyframes bounce {
-  0%,
-  100% {
-    background-color: rgba(3, 78, 190, 0.356);
+  0%{
+    background-color: #fddfdf;
+  }
+  30%{
+    background-color: #fcf7de;
   }
   50% {
-    background-color: rgba(108, 154, 224, 0.418);
+    background-color: #defde0;
   }
   80% {
-    background-color: rgba(170, 201, 247, 0.518);
+    background-color: #def3fd;
+  }
+  100% {
+    background-color: #f0defd;
   }
 }
 @keyframes nudge {
@@ -153,8 +168,7 @@ h1 {
   }
 }
 .g-container {
-  color: #38598b;
-  filter: contrast(15);
+  filter: brightness(5);
   font-family: "Josefin Sans", sans-serif;
   font-size: 50px;
   position: relative;
@@ -204,7 +218,7 @@ h1 {
   height: 400px;
   width: 400px;
   animation: text-nudge 40s infinite alternate;
-  box-shadow: 3px 3px 40px rgba(249, 250, 255, 0.8);
+  box-shadow: var(--shadow-color);
   border-radius: 100%;
 }
 .text {
@@ -222,17 +236,20 @@ h1 {
 }
 @keyframes text-nudge {
   0% {
+    background-color: rgba(187, 218, 253, 0.5);
     transform: translate(80px, 40px);
   }
   50% {
+    background-color: rgba(187, 218, 253, 0.4);
     transform: translate(80px, -20px);
   }
   100% {
+    background-color: rgba(187, 218, 253, 0.3);
     transform: translate(400px, 20px);
   }
 }
 .quote {
-  color: var(--primary-color);
+  color:var(--primary-color);
   font-family: "Josefin Sans", sans-serif;
   font-size: 40px;
   font-weight: bolder;
@@ -252,18 +269,16 @@ h1 {
   color: var(--headings-color);
 }
 .about-body {
-  background-color: #edf8ff;
+  background-color: var(--framework-color);
   background-size: cover;
-  padding: 10px 0 0;
-  margin: auto 0;
+  margin-bottom: -17px;
 }
 .about-case {
-  background-color: rgba(177, 181, 206, 0.5);
+  background-color: var(--case-color);
   background-size: cover;
-  border-radius: 4px;
-  box-shadow: 1px 1px 12px rgb(166, 172, 201);
-  color: #fff;
-  margin: 110px 70px -20px;
+  border-radius: 12px;
+  box-shadow: var(--element-shadow);
+  margin: 120px 70px -20px;
 }
 .about-h1 {
   color: var(--paragraphs-color);
@@ -274,28 +289,27 @@ h1 {
   margin:  50px 0 20px 0;
 }
 .contact-p {
-  color: #bcc3c9;
+  color: var(--primary-color);
   font-family: "Josefin Sans", sans-serif;
   font-size: 22px;
   letter-spacing: -1px;
   line-height: 1;
-  margin: -25px 20px;
-  padding: 20px 40px;
+  margin: 5px 80px;
   text-align: start;
 }
 h3 {
-  color: #edf8ff;
+  color: var(--primary-color);
   font-family: "Josefin Sans", sans-serif;
   font-size: 40px;
   font-weight: 600;
   text-align: start;
-  margin: 50px 60px;
+  margin: 50px 80px;
 }
 .work-box {
   background-image: url(/images/portrait.png);
   background-size:cover;
-  box-shadow: 3px 3px 40px rgb(254, 255, 255);
-  border-radius: 4px;
+  box-shadow:  var(--element-shadow);
+  border-radius: 12px;
   padding: 5px 15px 50px;
   margin:  10px 0 100px 0;
 }
@@ -304,7 +318,7 @@ form {
   margin: auto ;
 }
 .message-input {
-  color: #edf8ff;
+  color: var(--framework-color);
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -334,7 +348,7 @@ textarea {
   background: rgba(167, 168, 173, 0.2);
   border-radius: 4px;
   border: 1px groove rgba(167, 168, 173, 0.2);
-  color: #edf8ff;
+  color: var(--primary-color);
   font-size: 25px;
   margin-bottom: 30px;
   padding: 5px;
@@ -342,9 +356,10 @@ textarea {
   }
 [type="submit"]:hover {
   color: var(--hovering-color);
+  font-size: 28px;
 }
 .projects-body {
-  background-color: #edf8ff;
+  background-color: var(--framework-color);
   background-size: cover;
   margin-bottom: -17px;
 }
@@ -353,41 +368,43 @@ textarea {
   justify-content: center;
 }
 .projects-case {
-  background-color: rgba(177, 181, 206, 0.5);
+  background-color: var(--case-color);
   background-size: cover;
-  border-radius: 4px;
-  box-shadow: 1px 1px 12px rgb(166, 172, 201);
-  color: #fff;
-  margin: 100px 70px -20px;
+  border-radius: 12px;
+  box-shadow: var(--element-shadow);
+  margin: 120px 70px -20px;
   padding: 0 0 75px;
 }
 .projects-h1 {
   color: var(--headings-color);
+  font-family: "Josefin-sans", sans-serif;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 500;
+  letter-spacing: -1px;
   margin: 60px 0 -20px;
  
 }
 .discover-travel,
 .discover-weather {
-  box-shadow: 1px 1px 8px rgb(117, 119, 133);
+  border-radius: 12px;
+  box-shadow: 1px 1px 12px rgb(166, 172, 201);
   transition: all 500ms ease-in-out;
   margin: auto ;
-  padding: 20px;
+
 }
 .discover-dictionary,
-.discover-translation {
-  box-shadow: 1px 1px 8px rgb(117, 119, 133);
+.next-project {
+  border-radius: 12px;
+  box-shadow: 1px 1px 12px rgb(166, 172, 201);
   transition: all 500ms ease-in-out;
   margin: 8px auto;
 }
 .discover-travel:hover,
 .discover-weather:hover,
 .discover-dictionary:hover,
-.discover-translation:hover {
-  border: 1px solid #edeff6;
+.next-project:hover {
   transform: scale(1.1);
-  box-shadow: 1px 1px 8px rgb(237, 239, 246);
+  box-shadow: var(--shadow-color);
 }
 .email-icon,
 .github-icon,
@@ -414,16 +431,19 @@ textarea {
   letter-spacing: -1px;
 }
 .open-source-link {
-  color: #578bbe;
+  color: var(--headings-color);
   text-decoration: none;
+}
+.open-source-link:hover{
+  color: var(--hovering-color);
 }
 @media (max-width: 576px) {
   .hero-case {
-    margin: 100px 30px 0;
+    margin: 120px 30px 100px;
     padding: 5px;
   }
   .element {
-    animation: none;
+    animation: bounce 12s ease-in-out infinite alternate ;
     background-color: #a8c9ea;
     height: 120px;
     width: 120px;
@@ -435,7 +455,7 @@ textarea {
   }
   .text-container {
     animation: none;
-    box-shadow: 3px 3px 40px rgba(249, 250, 255, 0.8);
+    box-shadow: var(--shadow-color);
     margin: 0 auto;
     height: 250px;
     width: 250px;
@@ -447,10 +467,10 @@ textarea {
     font-size: 15px;
   }
   .ball {
-    animation: none;
+    animation: bounce 28s ease-in-out infinite alternate;
     background-color: #a8c9ea;
     border-radius: 4px;
-    box-shadow: 3px 3px 40px rgba(249, 250, 255, 0.8);
+    box-shadow: var(--shadow-color);
     margin: 25px auto;
     position: relative;
     height: 50px;
@@ -461,11 +481,9 @@ textarea {
     top: 10px;
     left: 30px;
   }
-  .about-body{
-    padding: 10px;
-  }
+ 
   .about-case{
-    margin: 80px 20px 0;
+    margin: 100px 30px -20px;
   }
   .about-h1{
     font-size: 15px;
@@ -497,7 +515,7 @@ textarea {
     font-size: 15px;
   }
   .projects-case {
-    margin: 55px 30px -20px;
+    margin: 30px 30px -30px;
   }
   .projects-h1 {
     font-size: 20px;
