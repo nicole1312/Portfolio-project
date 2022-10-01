@@ -168,7 +168,7 @@ h1 {
   }
 }
 .g-container {
-  filter: brightness(5);
+  filter:contrast(5);
   font-family: "Josefin Sans", sans-serif;
   font-size: 50px;
   position: relative;
@@ -443,8 +443,7 @@ textarea {
     padding: 5px;
   }
   .element {
-    animation: bounce 12s ease-in-out infinite alternate ;
-    background-color: #a8c9ea;
+    animation: bounce 42s ease-out infinite alternate;
     height: 120px;
     width: 120px;
     margin: 20px auto;
@@ -468,8 +467,7 @@ textarea {
   }
   .ball {
     animation: bounce 28s ease-in-out infinite alternate;
-    background-color: #a8c9ea;
-    border-radius: 4px;
+    border-radius: 12px;
     box-shadow: var(--shadow-color);
     margin: 25px auto;
     position: relative;
@@ -478,12 +476,14 @@ textarea {
   }
   .discover-more-link {
     position: relative;
+    left: 25px;
     top: 10px;
-    left: 30px;
   }
- 
-  .about-case{
-    margin: 100px 30px -20px;
+  .about-body{
+    padding: 0 20px 0;
+  }
+ .about-case{
+    margin: 100px 20px -20px;
   }
   .about-h1{
     font-size: 15px;
@@ -501,7 +501,7 @@ textarea {
   .contact-p{
     font-size: 18px;
     margin: 0;
-    padding: 10px 0;
+    padding: 10px ;
   }
   .message-input{
     font-size: 15px;
