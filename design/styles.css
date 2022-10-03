@@ -204,7 +204,7 @@ h1 {
   0%,
   5%,
   100% {
-    filter: blur(5px);
+    filter: blur(0px);
     opacity: 1;
   }
   50%,
@@ -446,7 +446,8 @@ textarea {
     padding: 5px;
   }
   .g-container{
-    filter: brightness(1);
+    filter: brightness(1),
+             blur(0px);
   }
   .element {
     animation: bounce 20s ease-out infinite alternate;
@@ -455,7 +456,6 @@ textarea {
     margin: 20px auto;
   }
   .word {
-    filter: brightness(0.2);
     font-size: 25px;
     margin-top: -20px;
   }
@@ -488,9 +488,6 @@ textarea {
   }
   .about-body{
   margin: -20px 0;
-  }
-  .about-nav{
-    width: 94%;
   }
  .about-case{
     margin: 110px 30px -20px;
