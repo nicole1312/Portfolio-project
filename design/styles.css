@@ -18,8 +18,8 @@
 }
 .navbar-toggler:hover,
 .navbar-brand:hover {
-  transition: all 100ms ease-in-out;
   opacity: 0.7;
+  transition: all 100ms ease-in-out;
 }
 html {
   background-color: var(--framework-color);
@@ -34,7 +34,6 @@ html {
   background-size: cover;
   border-radius: 12px;
   box-shadow:var(--element-shadow);
-  
   margin: 120px 70px -20px;
   padding: 0 0 55px;
 }
@@ -43,26 +42,26 @@ h1 {
   font-size: 55px;
   font-family:"Josefin Sans", sans-serif;
   font-weight: 800;
-  text-align: center;
   padding: 80px;
+  text-align: center;
 }
 .element {
   height: 250px;
   width: 250px;
-  box-shadow:var(--shadow-color);
   animation: bounce 12s ease-in-out infinite alternate,
              nudge 12s linear infinite alternate;
   border-radius: 100%;
+  box-shadow: var(--shadow-color);
 }
 .bauble1 {
   height: 100px;
   width: 100px;
-  box-shadow: var(--shadow-color);
   animation: bauble1 48s ease-in-out infinite alternate;
   border-radius: 100%;
-  position: absolute;
-  right: 0%;
+  box-shadow: var(--shadow-color);
   bottom: 0%;
+  right: 0%;
+  position: absolute;
 }
 @keyframes bauble1 {
   0% {
@@ -85,12 +84,12 @@ h1 {
 .bauble2 {
   height: 80px;
   width: 80px;
-  box-shadow: var(--shadow-color);
   animation: bauble2 15s ease-in-out infinite alternate;
   border-radius: 100%;
-  position: absolute;
-  right: 0%;
+  box-shadow: var(--shadow-color);
   bottom: 0%;
+  right: 0%;
+  position: absolute;
 }
 @keyframes bauble2 {
   0% {
@@ -114,12 +113,12 @@ h1 {
 .ball {
   height: 150px;
   width: 150px;
-  box-shadow: var(--shadow-color);
   animation: ball 33s ease-in-out infinite alternate;
   border-radius: 100%;
-  position: absolute;
-  right: 0%;
+  box-shadow: var(--shadow-color);
   bottom: 0%;
+  right: 0%;
+  position: absolute;
 }
 @keyframes ball {
   0% {
@@ -168,37 +167,37 @@ h1 {
   }
 }
 .g-container {
-  filter:contrast(5);
+  filter: contrast(1);
   font-family: "Josefin Sans", sans-serif;
   font-size: 50px;
   position: relative;
 }
 .word {
-  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   animation: switch 9s infinite ease-in-out;
   min-width: 100%;
-  margin: 40px auto;
+  margin: 50px auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 .word:nth-child(1) {
-  animation-delay: -8s;
+  animation-delay: -9s;
 }
 .word:nth-child(2) {
-  animation-delay: -7s;
+  animation-delay: -8s;
 }
 .word:nth-child(3) {
-  animation-delay: -6s;
+  animation-delay: -7s;
 }
 .word:nth-child(4) {
-  animation-delay: -5s;
+  animation-delay: -6s;
 }
 .word:nth-child(5) {
-  animation-delay: -4s;
+  animation-delay: -5s;
 }
 .word:nth-child(6) {
-  animation-delay: -3s;
+  animation-delay: -4s;
 }
 @keyframes switch {
   0%,
@@ -214,25 +213,25 @@ h1 {
   }
 }
 .text-container {
-  position: relative;
   height: 400px;
   width: 400px;
   animation: text-nudge 40s infinite alternate;
-  box-shadow: var(--shadow-color);
   border-radius: 100%;
+  box-shadow: var(--shadow-color);
+  position: relative;
 }
 .text {
+  top: 50%;
+  left: 50%;
   color: var(--headings-color);
   font-family: "Josefin Sans", sans-serif;
   font-size: 25px;
-  line-height: 1.2;
   font-weight: 700;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  line-height: 1.2;
   min-width: 100%;
   padding: 50px;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 @keyframes text-nudge {
   0% {
@@ -256,14 +255,14 @@ h1 {
   padding-left: 40px;
 }
 .discover-more-link {
+  top: 40%;
+  left: 10%;
   color: var(--primary-color);
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   font-weight: bolder;
   padding: -20px 25px;
   position: absolute;
-  top: 40%;
-  left: 10%;
 }
 .discover-more-link:hover {
   color: var(--headings-color);
@@ -285,8 +284,8 @@ h1 {
   font-size: 18px;
   font-family: "Josefin Sans", sans-serif;
   letter-spacing: -1px;
-  text-align: start;
   margin:  50px 0 20px 0;
+  text-align: start;
 }
 .contact-p {
   color: var(--primary-color);
@@ -302,36 +301,36 @@ h3 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 40px;
   font-weight: 600;
-  text-align: start;
   margin: 50px 80px;
+  text-align: start;
 }
 .work-box {
   background-image: url(/images/portrait.png);
   background-size:cover;
   box-shadow:  var(--element-shadow);
   border-radius: 12px;
-  padding: 5px 15px 50px;
   margin:  10px 0 100px 0;
+  padding: 5px 15px 50px;
 }
 form {
-  max-width: 420px;
   margin: auto ;
+  max-width: 420px;
 }
 .message-input {
-  color: var(--framework-color);
-  font-family: "Oswald", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  border-radius: 4px;
-  line-height: 20px;
   background-color: rgba(167, 168, 173, 0.3);
   border: 1px groove rgba(167, 168, 173, 0.2);
-  transition: all 0.3s;
-  padding: 10px;
-  margin-bottom: 15px;
-  width: 100%;
+  border-radius: 4px;
   box-sizing: border-box;
+  color: var(--framework-color);
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 15px;
   outline: 0;
+  padding: 10px;
+  transition: all 0.3s;
+  width: 100%;
 }
 .message-input:focus {
   box-shadow: 2px 2px 20px var(--primary-color);
@@ -342,17 +341,17 @@ textarea {
   resize: vertical;
 }
 [type="submit"] {
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
-  width: 100%;
   background: rgba(167, 168, 173, 0.2);
-  border-radius: 4px;
   border: 1px groove rgba(167, 168, 173, 0.2);
+  border-radius: 4px;
   color: var(--primary-color);
+  font-family: "Oswald", sans-serif;
   font-size: 25px;
+  font-weight: bold;
   margin-bottom: 30px;
   padding: 5px;
   transition: all 0.3s;
+  width: 100%;
   }
 [type="submit"]:hover {
   color: var(--hovering-color);
@@ -388,23 +387,23 @@ textarea {
 .discover-weather {
   border-radius: 12px;
   box-shadow: 1px 1px 12px rgb(166, 172, 201);
-  transition: all 500ms ease-in-out;
   margin: auto ;
+  transition: all 500ms ease-in-out;
 
 }
 .discover-dictionary,
 .next-project {
   border-radius: 12px;
   box-shadow: 1px 1px 12px rgb(166, 172, 201);
-  transition: all 500ms ease-in-out;
   margin: 8px auto;
+  transition: all 500ms ease-in-out;
 }
 .discover-travel:hover,
 .discover-weather:hover,
 .discover-dictionary:hover,
 .next-project:hover {
-  transform: scale(1.1);
   box-shadow: var(--shadow-color);
+  transform: scale(1.1);
 }
 .email-icon,
 .github-icon,
@@ -445,18 +444,13 @@ textarea {
     margin: 120px 30px 130px;
     padding: 5px;
   }
-  @keyframes switch{
-    50%,
-    80%{
-      filter: blur(50px);
-      opacity: 0;
-      }
-    }
+  .g-container{
+    filter: blur(150%);
   }
   .element {
-    animation: bounce 20s ease-out infinite alternate;
     height: 120px;
     width: 120px;
+    animation: bounce 20s ease-out infinite alternate;
     margin: 20px auto;
   }
   .word {
@@ -477,18 +471,18 @@ textarea {
     font-size: 15px;
   }
   .ball {
+    height: 50px;
+    width: 200px;
     animation: bounce 28s ease-in-out infinite alternate;
     border-radius: 12px;
     box-shadow: var(--shadow-color);
     margin: 25px auto;
     position: relative;
-    height: 50px;
-    width: 200px;
   }
   .discover-more-link {
-    position: relative;
     left: 25px;
     top: 10px;
+    position: relative;
   }
   .about-body{
   margin: -20px 0;
@@ -502,17 +496,17 @@ textarea {
     margin: -40px -78px;
   }
   .work-box{
-    padding: 0;
-    margin: -20px 0 40px;
+    margin: 5px 0 40px;
+    padding: 20px;
   }
   h3{
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
   }
   .contact-p{
     font-size: 18px;
-    margin: 0;
-    padding: 10px ;
+    margin: 0 ;
+    padding: 10px 0;
   }
   .message-input{
     font-size: 15px;
@@ -520,7 +514,7 @@ textarea {
   }
   textarea{
     height: 80px;
-  line-height: 120%;
+    line-height: 120%;
   }
   [type="submit"]{
     font-size: 15px;
@@ -546,14 +540,11 @@ textarea {
   .email-icon,
   .github-icon,
   .linkedin-icon {
-    padding: 10px;
     margin: 30px 0 -25px;
-  }
-  .work-box {
-    padding: 40px;
+    padding: 10px;
   }
   .coder {
     font-size: 11px;
-    padding: 20px;
+    padding: 20px ;
   }
 }
