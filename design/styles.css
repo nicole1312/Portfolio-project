@@ -445,9 +445,13 @@ textarea {
     margin: 120px 30px 130px;
     padding: 5px;
   }
-  .g-container{
-    filter: brightness(1),
-             blur(0px);
+  @keyframes switch{
+    50%,
+    80%{
+      filter: blur(50px);
+      opacity: 0;
+      }
+    }
   }
   .element {
     animation: bounce 20s ease-out infinite alternate;
