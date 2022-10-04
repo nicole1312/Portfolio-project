@@ -2,7 +2,7 @@
   --primary-color: #fff;
   --headings-color: #38598b;
   --paragraphs-color: #093052;
-  --hovering-color: #caf1ff;
+  --hovering-color: #aed4ff;
   --framework-color:#edf8ff;
   --shadow-color:0 0 7px #fff,
                 0 0 10px #fff,
@@ -33,12 +33,12 @@ html {
   background-color: var(--case-color);
   background-size: cover;
   border-radius: 12px;
-  box-shadow:var(--element-shadow);
+  box-shadow: var(--element-shadow);
   margin: 120px 70px -20px;
   padding: 0 0 55px;
 }
 h1 {
-  color:var(--primary-color);
+  color: var(--primary-color);
   font-size: 55px;
   font-family:"Josefin Sans", sans-serif;
   font-weight: 800;
@@ -97,7 +97,7 @@ h1 {
     transform: translate(-800px, -450px);
   }
   25% {
-    background-color: rgba(240, 222, 253, 0.8);
+    background-color: rgba(240, 222, 253, 0.9);
     ransform: translate(180px, -120px);
   }
   75% {
@@ -225,11 +225,11 @@ h1 {
   left: 50%;
   color: var(--headings-color);
   font-family: "Josefin Sans", sans-serif;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1;
   min-width: 100%;
-  padding: 50px;
+  padding: 60px;
   position: absolute;
   transform: translate(-50%, -50%);
 }
@@ -252,7 +252,7 @@ h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 40px;
   font-weight: bolder;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 .discover-more-link {
   top: 40%;
@@ -337,7 +337,7 @@ form {
 }
 textarea {
   height: 150px;
-  line-height: 150%;
+  line-height: 1.5;
   resize: vertical;
 }
 [type="submit"] {
@@ -376,20 +376,17 @@ textarea {
 }
 .projects-h1 {
   color: var(--headings-color);
-  font-family: "Josefin-sans", sans-serif;
-  font-size: 40px;
-  font-weight: 500;
-  letter-spacing: -1px;
-  margin: 60px 0 -20px;
- 
-}
+  font-family: "Oswald", sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  }
 .discover-travel,
 .discover-weather {
   border-radius: 12px;
   box-shadow: 1px 1px 12px rgb(166, 172, 201);
   margin: auto ;
   transition: all 500ms ease-in-out;
-
 }
 .discover-dictionary,
 .next-project {
@@ -426,7 +423,7 @@ textarea {
 }
 .coder {
   font-size: 13px;
-  font-family: monospace;
+  font-family: "Josefin Sans", sans-serif;
   letter-spacing: -1px;
 }
 .open-source-link {
@@ -466,9 +463,11 @@ textarea {
   }
   .text {
     font-size: 15px;
+    line-height: 1;
+    padding: 45px;
   }
   .quote {
-    font-size: 15px;
+    font-size: 20px;
   }
   .ball {
     height: 50px;
@@ -532,10 +531,10 @@ textarea {
     padding: 20px;
   }
   .discover-weather {
-    margin-top: -35px;
+    margin-top: -40px;
   }
-  .discover-translation {
-    margin: 5px 0 -30px;
+  .next-project {
+    margin: 0 -30px 20px;
   }
   .email-icon,
   .github-icon,
