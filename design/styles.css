@@ -34,8 +34,8 @@ html {
   background-size: cover;
   border-radius: 12px;
   box-shadow: var(--element-shadow);
-  margin: 120px 70px -20px;
-  padding: 0 0 55px;
+  margin: 120px 70px 20px;
+  padding: 0 0 180px;
 }
 h1 {
   color: var(--primary-color);
@@ -389,6 +389,7 @@ textarea {
   transition: all 500ms ease-in-out;
 }
 .discover-dictionary,
+.discover-travel-london,
 .next-project {
   border-radius: 12px;
   box-shadow: 1px 1px 12px rgb(166, 172, 201);
@@ -398,6 +399,7 @@ textarea {
 .discover-travel:hover,
 .discover-weather:hover,
 .discover-dictionary:hover,
+.discover-travel-london:hover,
 .next-project:hover {
   box-shadow: var(--shadow-color);
   transform: scale(1.1);
