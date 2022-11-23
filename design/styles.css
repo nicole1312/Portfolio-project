@@ -390,6 +390,7 @@ textarea {
 }
 .discover-dictionary,
 .discover-travel-london,
+.clock-project,
 .next-project {
   border-radius: 12px;
   box-shadow: 1px 1px 12px rgb(166, 172, 201);
@@ -400,6 +401,7 @@ textarea {
 .discover-weather:hover,
 .discover-dictionary:hover,
 .discover-travel-london:hover,
+.clock-project:hover,
 .next-project:hover {
   box-shadow: var(--shadow-color);
   transform: scale(1.1);
