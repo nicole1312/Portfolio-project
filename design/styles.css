@@ -357,6 +357,9 @@ textarea {
   color: var(--hovering-color);
   font-size: 28px;
 }
+.resume{
+  text-decoration: none;
+}
 .projects-body {
   background-color: var(--framework-color);
   background-size: cover;
